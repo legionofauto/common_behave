@@ -63,7 +63,7 @@ def set_key_prop(key, value):
     """
     """
     value=b64encode(value).decode()
-    key_file='C:\\Users\\McMahon\\eclipse-workspace\\something\\crypto_key.key'
+    key_file='C:\\path\\to\\secure\\folder\\crypto_key.key'
     config = RawConfigParser()
     config.read(key_file)
     config['KEY'][key] = value
